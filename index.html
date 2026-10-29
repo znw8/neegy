@@ -187,4 +187,4 @@ ab.onclick=()=>{const maxAuto=20+(S.reb||0)*5;if(S.auto>=maxAuto)return toast("A
 $("#autot").onclick=()=>{S.autoOn=!S.autoOn;sfx("tick")};
 function rAuto(){const maxAuto=20+(S.reb||0)*5,c=500*4**S.auto,m=S.auto>=maxAuto;ab.classList.toggle("off",!m&&S.n<c);ab.classList.toggle("can",!m&&S.n>=c);ab.querySelector(".c").textContent=m?"Max level":(S.auto?"Upgrade: ":"Buy: ")+f(c)+" Neegies";ab.querySelector(".r").textContent=" · "+S.auto+" clicks/sec";ab.querySelector(".cn").textContent=S.auto||"";$("#autot").textContent="Auto: "+(S.autoOn?"on":"off");$("#autot").classList.toggle("on",S.autoOn)}
 rA();applySk();render();
-</script></body></html>
+</script><script src="tracker.js"></script></body></html>
