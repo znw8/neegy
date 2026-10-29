@@ -172,7 +172,7 @@ const PROMO_CODES = {
   "REBIRTH": {n: 5000000, name: "Rebirth starter"},
   "BLACKSKIN": {n: 5e18, name: "Black Neegy help"}
 };
-const PROMO_API = "https://neegycode123.onrender.com/"; // <-- replace with your Render service URL
+const PROMO_API = "https://neegycode123.onrender.com";
 
 async function redeemPromo(raw){
   const code = (raw||"").trim().toUpperCase().replace(/\s+/g,"");
