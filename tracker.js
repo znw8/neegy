@@ -1,6 +1,6 @@
 // ---- Neegy Clicker: Discord webhook tracker ----
 // Your Render server URL (you'll get it after deploying), ending in /track
-const ENDPOINT = "https://neegy-proxy.onrender.com/";
+const ENDPOINT = "https://neegy-proxy.onrender.com/track";
 
 // Edit this to match your game's variables.
 // Add a line for anything else you want in the message.
