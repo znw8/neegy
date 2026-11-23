@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#04101c">
+<title>Neegy Dive — the daily deep-sea trivia</title>
+<meta name="description" content="Seven questions. Type your answers. The rarer your answer, the more it scores. A new dive every day.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="bubbles" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+<header class="topbar">
+  <a class="brand" href="#/" aria-label="Neegy Dive home"><span id="brand-logo"></span><span class="brand-name">Neegy Dive</span></a>
+  <nav class="desk-nav" aria-label="Main">
+    <a href="#/" data-nav="home">Home</a>
+    <a href="#/daily" data-nav="daily">Daily Dive</a>
+    <a href="#/unlimited" data-nav="unlimited">Unlimited</a>
+    <a href="#/leaderboard" data-nav="leaderboard">Leaderboard</a>
+    <a href="#/stats" data-nav="stats">Profile</a>
+  </nav>
+  <div class="top-actions">
+    <a class="icon-link" href="#/how" aria-label="How to play" data-nav="how">?</a>
+    <button id="auth-btn" class="btn small" data-action="open-auth">Sign in</button>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"><div class="card skeleton"></div></main>
+
+<nav class="tabbar" aria-label="Main">
+  <a href="#/" data-nav="home">Home</a>
+  <a href="#/daily" data-nav="daily">Daily</a>
+  <a href="#/unlimited" data-nav="unlimited">Unlimited</a>
+  <a href="#/leaderboard" data-nav="leaderboard">Ranks</a>
+  <a href="#/stats" data-nav="stats">Profile</a>
+</nav>
+
+<div id="modal-root"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/app.js" defer></script>
+</body>
+</html>
