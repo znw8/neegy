@@ -1,0 +1,12 @@
+# OPTIONAL. Only needed if you deploy from a computer with the Wrangler CLI.
+# The phone/dashboard setup in the README does NOT use this file.
+# If you rename this to wrangler.toml, Cloudflare treats it as the source of truth for bindings.
+
+name = "neegy-dive"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "neegy-dive-db"
+database_id = "PASTE-YOUR-D1-DATABASE-ID-HERE"
