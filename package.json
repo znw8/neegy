@@ -1,0 +1,10 @@
+{
+  "name": "neegy-dive",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Neegy Dive: a daily deep-sea trivia game on Cloudflare Pages, Workers and D1.",
+  "scripts": {
+    "db:local": "npx wrangler d1 execute DB --local --file=schema.sql",
+    "dev": "npx wrangler pages dev public --d1=DB --compatibility-date=2024-11-01"
+  }
+}
